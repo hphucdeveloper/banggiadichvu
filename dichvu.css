@@ -1,0 +1,341 @@
+.pricing-container {
+    margin: 50px 0;
+    font-family: "Camblari", sans-serif;
+    display: flex;
+    max-width: 1400px;
+    line-height: 1;
+  }
+  
+  .pricing-container .plan {
+    text-align: center;
+    background: linear-gradient(125deg, #36f4de, #4094d6);
+    margin: 0 8px;
+    flex: 1;
+    box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.4);
+    transition: 400ms;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .pricing-container .plan.best-value::after {
+    content: "Hot";
+    position: absolute;
+    top: 4px;
+    right: -34px;
+    transform: rotate(40deg);
+    padding: 10px 48px;
+    font-weight: bold;
+    background: #c51e1e;
+    color: #fff;
+  }
+
+  .pricing-container .plan.best-value-2::after {
+    content: "Best";
+    position: absolute;
+    top: 4px;
+    right: -34px;
+    transform: rotate(40deg);
+    padding: 10px 48px;
+    font-weight: bold;
+    background: greenyellow;
+    color: #ff0000;
+  }
+  
+  .pricing-container h2 {
+    margin: 0;
+    font-size: 32px;
+    padding: 20px;
+    color: #143a46;
+  }
+  
+  .pricing-container .price {
+    padding: 16px;
+    font-size: 26px;
+    font-weight: bold;
+    background: #222;
+    color: #eee;
+  }
+  
+  .pricing-container .duration {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .pricing-container .features {
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    color: #131313;
+  }
+  
+  .pricing-container .features li {
+    margin: 16px 0;
+  }
+  
+  .pricing-container .get-plan-btn {
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 24px;
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #292929;
+    border-radius: 8px;
+    padding: 8px 32px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 400ms;
+  }
+  
+  /* Hover */
+  
+  .pricing-container .plan:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .pricing-container .get-plan-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 740px) {
+    .pricing-container {
+      flex-direction: column;
+    }
+  
+    .pricing-container .plan {
+      margin: 16px 0;
+        }
+    }
+.footer { 
+    display: block;
+    text-align: center;
+    border-style: outset;
+    border-width: medium;
+    color:#000000;
+    background-color: #ffffff;
+    size: 0px 2px 5px;
+}
+.header{
+    text-align: center;
+    color: #ffffff;
+}
+.mquee{
+    width: 480px;
+    overflow: hidden;
+    border: 1px solid #0beaea;
+    background: #c6bdbd;
+    font-size: 20px;
+}
+body{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: url(https://tophinhanhdep.com/wp-content/uploads/2021/10/Navy-Blue-Wallpapers.jpg);
+}
+.loader {
+    background: #000;
+    background: radial-gradient(#222, #000);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.loader-inner {
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap {
+    animation: 
+    spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+  ;
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    width: 100px;
+}
+.loader-line {
+    border: 4px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+    border-color: hsl(0, 80%, 60%);
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+    border-color: hsl(60, 80%, 60%);
+    height: 76px;
+    width: 76px;
+    top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+    border-color: hsl(120, 80%, 60%);
+    height: 62px;
+    width: 62px;
+    top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+    border-color: hsl(180, 80%, 60%);
+    height: 48px;
+    width: 48px;
+    top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+    border-color: hsl(240, 80%, 60%);
+    height: 34px;
+    width: 34px;
+    top: 35px;
+}
+
+@keyframes spin {
+    0%, 15% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.Footer .HPhucFtCopyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: #aaa;
+    margin-bottom: 0
+    
+
+}
+/* Định dạng h1 */
+.Footer .HPhucFtCopyright-2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: #aaa;
+    margin-bottom: 0
+}    
+/* end */
+p{
+    font-weight: 900;
+    }
+
+.rainbow {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 0;
+    animation: colorRotate 2.5s linear 0s infinite
+}
+.rainbow-2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 30px;
+    color: #aaa;
+    margin-bottom: 0;
+    animation: colorRotate 1s linear 0s infinite
+    
+}
+.rainbow-3 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+    color: #aaa;
+    margin-bottom: 0;
+    animation: flashing 14s linear 0s infinite
+    
+}
+@keyframes colorRotate {
+    from {
+        color: #FFFFFF
+    }
+    10% {
+        color: #FF0000
+    }
+    30% {
+        color: #00FF00
+    }
+    45% {
+        color: #0000FF
+    }
+    55% {
+        color: #FFFF00
+    }
+    65% {
+        color: #00FFFF
+    }
+    75% {
+        color: #00FF00
+    }
+    85% {
+        color: #0000FF
+    }
+    100% {
+        color: #FF66CC
+    }
+}
+
+
+@keyframes flashing {
+    from {
+        color: #ff0000
+    }
+    10% {
+        color: #FFFF00
+    }
+    30% {
+        color: #ff0000
+    }
+    45% {
+        color: #FFFF00
+    }
+    55% {
+        color: #ff0000
+    }
+    65% {
+        color: #FFFF00
+    }
+    75% {
+        color: #ff0000
+    }
+    85% {
+        color: #FFFF00
+    }
+    100% {
+        color: #ff0000
+    }
+}
+
