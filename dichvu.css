@@ -339,3 +339,51 @@ p{
     }
 }
 
+/* Thiết bị di động */
+@media (max-width: 767px) {
+  .pricing-container {
+    flex-direction: column;
+  }
+  
+  .pricing-container .plan {
+    margin: 16px 0;
+  }
+}
+
+/* Thiết bị máy tính bảng */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .pricing-container {
+    max-width: 800px;
+  }
+  
+  .pricing-container h2 {
+    font-size: 24px;
+  }
+  
+  .pricing-container .price {
+    font-size: 22px;
+  }
+  
+  .pricing-container .features {
+    font-size: 18px;
+  }
+}
+
+/* Thiết bị desktop */
+@media (min-width: 1025px) {
+  .pricing-container .plan {
+    margin: 0 16px;
+  }
+  
+  .pricing-container h2 {
+    font-size: 36px;
+  }
+  
+  .pricing-container .price {
+    font-size: 28px;
+  }
+  
+  .pricing-container .features {
+    font-size: 20px;
+  }
+}
