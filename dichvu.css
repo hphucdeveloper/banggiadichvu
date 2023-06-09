@@ -125,8 +125,10 @@
 .mquee{
     width: 100%;
     overflow: hidden;
-    background: #c6bdbd;
-    font-size: 20px;
+  border: 1px solid #0beaea;
+  background: #c6bdbd;
+  font-size: 20px;
+  animation-duration: 5s;
 }
 body{
     display: flex;
